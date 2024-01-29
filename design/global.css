@@ -1,0 +1,165 @@
+/* default */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/*Default UI elements for each html file*/
+section {
+    position: relative;
+    padding-top: 50px;
+}
+
+#burger-dropdown {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    display: none;
+    width: 44px;
+    height: 44px;
+}
+
+a {
+    text-decoration: none;
+    color: #707070;
+}
+
+ul {
+    list-style: none;
+}
+
+/*Navigation*/
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+    background-color: #F1F1F1;
+}
+
+#logo {
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+
+#logo img {
+    margin-right: 10px;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #888888;
+}
+
+#logo a {
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+nav img {
+    margin-right: 20px;
+    padding: 0 5px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    background: black;
+    color: white;
+    padding: 5px;
+}
+
+footer img {
+    height: 54px;
+    width: auto;
+    margin-right: 10px;
+}
+
+@media (max-width: 685px) {
+    #burger-dropdown {
+        display: unset;
+    }
+
+    nav a, nav img {
+        display: none;
+    }
+
+    .dropdown-content {
+        display: none;
+        padding-top: 50px;
+        background: black;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 5;
+        position: fixed;
+        color: white;
+
+        gap: 30px;
+    }
+
+    .show {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .dropdown-content h1 {
+        border-bottom: solid 4px white;
+    }
+
+    #navigation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #navigation a {
+        font-size: x-large;
+    }
+
+    #navigation #button-nav {
+        margin-top: 10px;
+        width: 150px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        background: white;
+    }
+}
+
+@media (max-width: 415px) {
+    footer {
+        font-size: small;
+    }
+}
+
+@media (max-width: 280px) {
+    footer {
+        font-size: xx-small;
+    }
+}

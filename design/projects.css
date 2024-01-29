@@ -1,0 +1,133 @@
+section {
+    height: 100vh;
+}
+
+#project-homepage {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Adjust the height as needed */
+}
+
+#project-homepage h2 {
+    max-width: 40%;
+    margin-left: auto;
+    font-size: xx-large;
+    color: white;
+}
+
+#project-homepage img {
+    margin-left: 15%;
+    border-radius: 25px 0 0 25px;
+    box-shadow: 1px 1px 5px black;
+}
+
+#project-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.info {
+    margin: 11% 0;
+}
+
+#content-container {
+    width: 50%;
+}
+
+#content-container h3 {
+    font-size: 30px;
+}
+
+#content-container p {
+    font-size: 20px;
+}
+
+#technology-used {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #f8f8f8;
+}
+
+#tech-box {
+    margin: 40px 0;
+    display: flex;
+    gap: 25px;
+}
+
+.tech-item {
+    border-radius: 20px;
+    padding: 0 25px 0 5px;
+    display: flex;
+    align-items: center;
+    background: white;
+}
+
+@media (max-width: 415px) {
+    #project-homepage {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    #project-homepage h2 {
+        font-size: xx-large;
+        max-width: 100%;
+    }
+
+    #project-homepage img {
+        width: 100%;
+        height: auto;
+    }
+
+    #project-homepage h2 {
+        width: 100%;
+        max-width: none;
+        text-align: left;
+        margin-top: 10%;
+        margin-left: 15%;
+    }
+
+    #content-container {
+        width: 90%;
+    }
+
+    #project-info h3, #learn-info h3 {
+        font-size: large;
+    }
+
+    #technology-used h2 {
+        text-align: center;
+        font-size: large;
+    }
+
+    #tech-box {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .tech-item {
+        min-width: 94%;
+        max-width: 95%;
+    }
+
+    .tech-item img {
+        margin-right: auto;
+    }
+
+    #burger-dropdown {
+        display: none;
+    }
+
+    nav a, nav img {
+        display: block;
+    }
+}
